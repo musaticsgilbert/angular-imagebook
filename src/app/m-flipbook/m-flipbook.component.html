@@ -1,0 +1,6 @@
+<div>
+  <m-page-body *ngFor="let page of _pages; let i=index" [id]="_getPageContentId(i)"
+    [class.m-page-body-active]="selectedIndex == i" [content]="page.content!" [position]="page.position!"
+    [origin]="page.origin" [animationDuration]="animationDuration" (_onCentered)="_removePageBodyWrapperHeight()"
+    (_onCentering)="_setPageBodyWrapperHeight($event)"></m-page-body>
+</div>

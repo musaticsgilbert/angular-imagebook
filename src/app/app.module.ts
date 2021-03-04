@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { FlipbookModule } from './flipbook/flipbook.module';
+import { MFlipbookModule } from './m-flipbook/m-flipbook.module';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { FlipbookModule } from './flipbook/flipbook.module';
   ],
   imports: [
     BrowserModule,
-    FlipbookModule
+    MFlipbookModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
